@@ -1,0 +1,200 @@
+Body {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+p {
+  color: hsl(201, 11%, 66%);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.heading {
+  background: url(images/bg-header-desktop.png) no-repeat top,
+    linear-gradient(#eb01a500, #ffffff);
+  padding: 100px 30%;
+}
+.text-container {
+  padding: 0 30%;
+  margin-bottom: 60px;
+}
+.row {
+  margin: 80px 0;
+}
+.computer-with-details {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.computer-details {
+  text-align: left;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.computer {
+  margin-left: -30px;
+}
+button {
+  color: white;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 50px 50px;
+  font-size: 18px;
+}
+.btn-box {
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.ios {
+  background-color: hsl(171, 66%, 44%);
+}
+.mac {
+  background-color: hsl(233, 100%, 69%);
+}
+.ios:hover {
+  background-color: hsl(171, 59%, 51%);
+}
+.mac:hover {
+  background-color: hsl(233, 97%, 75%);
+}
+.head-logo {
+  margin-bottom: 30px;
+}
+.features {
+  width: 80%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 60px;
+}
+.icon-box {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.partners {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer {
+  background-color: hsl(206, 23%, 94%);
+}
+footer a {
+  color: hsl(201, 11%, 66%);
+  text-align: left;
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.5;
+}
+footer a:hover {
+  color: hsl(171, 66%, 44%);
+}
+.footer {
+  padding: 30px 0;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-logo {
+  width: 40px;
+}
+.logo-links {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+}
+.links {
+  display: flex;
+  gap: 100px;
+}
+.social-icons {
+  widows: 40%;
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 675px) {
+  .heading {
+    background: url(images/bg-header-mobile.png) no-repeat top,
+      linear-gradient(#eb01a500, #ffffff);
+    background-size: contain;
+    padding: 100px 5%;
+    margin: auto;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .text-container {
+    padding: 0 0;
+  }
+  .computer-with-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+  .computer-details {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .computer {
+    margin-left: 0;
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+  .btn-box {
+    flex-direction: column;
+  }
+
+  .features {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .partners {
+    width: 100%;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .footer {
+    display: block;
+  }
+  .logo-links {
+    display: block;
+  }
+  .links {
+    display: block;
+  }
+  .links a {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+}
